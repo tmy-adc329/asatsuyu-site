@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>お問い合わせ・お見積もり依頼｜株式会社あさつゆ住建</title>
+<meta name="description" content="リフォームのご相談、お見積もりのご依頼のフォームです。お電話でも受け付けています。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">本文へ移動</a>
+
+<!-- ===================== ヘッダー（全ページ共通） ===================== -->
+<header class="header">
+  <div class="header__inner">
+    <a class="logo" href="index.html" aria-label="株式会社あさつゆ住建 トップページへ">
+      <span class="logo__ja">あさつゆ住建</span><span class="logo__en">ASATSUYU JUKEN</span>
+    </a>
+    <nav class="gnav" id="gnav" aria-label="メインメニュー">
+      <ul class="gnav__list">
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="service.html">リフォームメニュー</a></li>
+        <li><a href="works.html">施工事例</a></li>
+        <li><a href="flow.html">流れ・よくある質問</a></li>
+        <li><a href="company.html">会社概要</a></li>
+        <li><a href="https://tmy-adc329.github.io/asatsuyu-lp/">採用情報<span class="sr-only">（採用ページへ移動します）</span><svg class="gnav__ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2L7.5 8.5M12 10v4H2V4h4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--navy header__cta" href="contact.html" aria-current="page">お問い合わせ</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="gnav"><span class="menu-btn__bar"></span><span class="sr-only">メニューを開く</span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== ページの見出し ===================== -->
+  <div class="page-head">
+    <div class="wrap">
+      <h1>お問い合わせ</h1>
+      <p class="page-head__lead">リフォームのご相談、お見積もりのご依頼は、このフォームかお電話で受け付けています。</p>
+    </div>
+  </div>
+
+  <section class="sec" aria-label="お問い合わせフォームとお電話">
+    <div class="wrap contact">
+
+      <!-- ===================== フォーム ===================== -->
+      <!-- 送信はダミー。SSGformなどに差し替えるときは action を設定し、form の data-demo を外す -->
+      <form class="form" action="#" method="post" novalidate data-demo>
+
+        <fieldset class="field" data-field="ご相談の種類">
+          <legend>ご相談の種類<span class="req-tag">必須</span></legend>
+          <div class="choices choices--1">
+            <label class="choice"><input type="radio" name="ご相談の種類" value="お見積もりの依頼" required><span>お見積もりの依頼</span></label>
+            <label class="choice"><input type="radio" name="ご相談の種類" value="相談したい"><span>相談したい</span></label>
+            <label class="choice"><input type="radio" name="ご相談の種類" value="その他"><span>その他</span></label>
+          </div>
+          <p class="field__error" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="field" data-field="工事したい場所[]">
+          <legend>工事したい場所<span class="req-tag">必須</span></legend>
+          <p class="field__hint">いくつでも選べます。</p>
+          <div class="choices">
+            <label class="choice"><input type="checkbox" name="工事したい場所[]" value="キッチン"><span>キッチン</span></label>
+            <label class="choice"><input type="checkbox" name="工事したい場所[]" value="浴室"><span>浴室</span></label>
+            <label class="choice"><input type="checkbox" name="工事したい場所[]" value="トイレ"><span>トイレ</span></label>
+            <label class="choice"><input type="checkbox" name="工事したい場所[]" value="洗面台"><span>洗面台</span></label>
+            <label class="choice"><input type="checkbox" name="工事したい場所[]" value="床"><span>床</span></label>
+            <label class="choice"><input type="checkbox" name="工事したい場所[]" value="壁紙"><span>壁紙</span></label>
+            <label class="choice"><input type="checkbox" name="工事したい場所[]" value="ドア"><span>ドア</span></label>
+            <label class="choice"><input type="checkbox" name="工事したい場所[]" value="窓"><span>窓</span></label>
+            <label class="choice"><input type="checkbox" name="工事したい場所[]" value="玄関"><span>玄関</span></label>
+            <label class="choice"><input type="checkbox" name="工事したい場所[]" value="その他"><span>その他</span></label>
+          </div>
+          <p class="field__error" role="alert"></p>
+        </fieldset>
+
+        <div class="field" data-field="お名前">
+          <label for="f-name">お名前<span class="req-tag">必須</span></label>
+          <input type="text" id="f-name" name="お名前" autocomplete="name" required>
+          <p class="field__error" role="alert"></p>
+        </div>
+
+        <fieldset class="field" data-field="ご希望の連絡方法">
+          <legend>ご希望の連絡方法<span class="req-tag">必須</span></legend>
+          <p class="field__hint">選んだほうの連絡先（電話番号またはメールアドレス）が必須になります。</p>
+          <div class="choices choices--2">
+            <label class="choice"><input type="radio" name="ご希望の連絡方法" value="電話" required><span>電話</span></label>
+            <label class="choice"><input type="radio" name="ご希望の連絡方法" value="メール"><span>メール</span></label>
+          </div>
+          <p class="field__error" role="alert"></p>
+        </fieldset>
+
+        <div class="field" data-field="電話番号">
+          <label for="f-tel">電話番号<span class="opt-tag" data-contact-tag>任意</span></label>
+          <input type="tel" id="f-tel" name="電話番号" autocomplete="tel" inputmode="tel">
+          <p class="field__error" role="alert"></p>
+        </div>
+
+        <div class="field" data-field="メールアドレス">
+          <label for="f-email">メールアドレス<span class="opt-tag" data-contact-tag>任意</span></label>
+          <input type="email" id="f-email" name="メールアドレス" autocomplete="email">
+          <p class="field__error" role="alert"></p>
+        </div>
+
+        <div class="field" data-field="お住まいの市区町村">
+          <label for="f-city">お住まいの市区町村<span class="req-tag">必須</span></label>
+          <input type="text" id="f-city" name="お住まいの市区町村" autocomplete="address-level2" required>
+          <p class="field__error" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-message">ご相談内容<span class="opt-tag">任意</span></label>
+          <textarea id="f-message" name="ご相談内容"></textarea>
+        </div>
+
+        <p class="form__privacy">ご入力いただいた情報は、お問い合わせへの回答とお見積もりのご連絡にのみ使います。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+        <button class="btn btn--navy" type="submit">入力した内容を送信する</button>
+        <p class="form__done" tabindex="-1" role="status">デモのため実際には送信されていません。</p>
+      </form>
+
+      <!-- ===================== お電話・お問い合わせのあと ===================== -->
+      <div class="contact__side">
+        <div class="tel">
+          <h2 class="tel__label">お電話でのご相談</h2>
+          <p class="tel__num"><!-- CLIENT: 電話番号 --><span class="ph">電話番号</span></p>
+          <p class="tel__hours">受付 8:00〜17:00（日曜日・GW・夏季休暇・年末年始は休み）</p>
+        </div>
+        <div class="after">
+          <h2>お問い合わせのあと</h2>
+          <ol>
+            <li>内容を確かめて、ご希望の方法（電話またはメール）でご連絡します。</li>
+            <li>現地調査の日を決めて、お住まいに伺います（30分〜1時間ほど）。</li>
+            <li>現地調査から1週間以内に、書面でお見積もりをお出しします。</li>
+          </ol>
+          <a class="more" href="flow.html">リフォームの流れを詳しく見る</a>
+        </div>
+        <figure class="photo contact__photo">
+          <img src="images/15_consult_swatches.jpg" alt="色見本と図面を手に取って選ぶイメージ" width="1280" height="1920" loading="lazy">
+          <figcaption class="photo-cap">打ち合わせのイメージ</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </section>
+
+
+</main>
+
+<!-- ===================== フッター（全ページ共通） ===================== -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div>
+      <a class="logo" href="index.html" aria-label="株式会社あさつゆ住建 トップページへ"><span class="logo__ja">あさつゆ住建</span><span class="logo__en">ASATSUYU JUKEN</span></a>
+      <p class="footer__name">株式会社あさつゆ住建</p>
+      <dl class="footer__info">
+        <dt>電話</dt><dd><!-- CLIENT: 電話番号 --><span class="ph">電話番号</span></dd>
+        <dt>営業時間</dt><dd>8:00〜17:00</dd>
+        <dt>定休日</dt><dd>日曜日、GW・夏季休暇・年末年始（祝日は営業）</dd>
+        <dt>所在地</dt><dd><!-- CLIENT: 所在地 --><span class="ph">所在地</span></dd>
+      </dl>
+    </div>
+    <nav class="footer__nav" aria-label="サイト内のページ">
+      <ul>
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="service.html">リフォームメニュー</a></li>
+        <li><a href="works.html">施工事例</a></li>
+        <li><a href="flow.html">流れ・よくある質問</a></li>
+        <li><a href="company.html">会社概要</a></li>
+        <li><a href="https://tmy-adc329.github.io/asatsuyu-lp/">採用情報<span class="sr-only">（採用ページへ移動します）</span><svg class="gnav__ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2L7.5 8.5M12 10v4H2V4h4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a></li>
+        <li><a href="contact.html" aria-current="page">お問い合わせ</a></li>
+        <li><a href="privacy.html">プライバシーポリシー</a></li>
+      </ul>
+    </nav>
+    <div class="footer__bottom">
+      <p class="footer__disclaimer">※このサイトは制作実績（ポートフォリオ）用に作成した架空の会社のWebサイトです。実在の会社ではなく、お問い合わせ・お見積もりはできません。</p>
+      <small>&copy; 株式会社あさつゆ住建</small>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

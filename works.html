@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>施工事例｜株式会社あさつゆ住建</title>
+<meta name="description" content="株式会社あさつゆ住建の施工事例です。内装・水まわり・窓と玄関の分類で絞り込めます。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">本文へ移動</a>
+
+<!-- ===================== ヘッダー（全ページ共通） ===================== -->
+<header class="header">
+  <div class="header__inner">
+    <a class="logo" href="index.html" aria-label="株式会社あさつゆ住建 トップページへ">
+      <span class="logo__ja">あさつゆ住建</span><span class="logo__en">ASATSUYU JUKEN</span>
+    </a>
+    <nav class="gnav" id="gnav" aria-label="メインメニュー">
+      <ul class="gnav__list">
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="service.html">リフォームメニュー</a></li>
+        <li><a href="works.html" aria-current="page">施工事例</a></li>
+        <li><a href="flow.html">流れ・よくある質問</a></li>
+        <li><a href="company.html">会社概要</a></li>
+        <li><a href="https://tmy-adc329.github.io/asatsuyu-lp/">採用情報<span class="sr-only">（採用ページへ移動します）</span><svg class="gnav__ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2L7.5 8.5M12 10v4H2V4h4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--navy header__cta" href="contact.html">お問い合わせ</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="gnav"><span class="menu-btn__bar"></span><span class="sr-only">メニューを開く</span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== ページの見出し ===================== -->
+  <div class="page-head">
+    <div class="wrap">
+      <h1>施工事例</h1>
+      <p class="page-head__lead">内装・水まわり・窓と玄関の分類で、絞り込んで見ることができます。</p>
+    </div>
+  </div>
+
+  <section class="sec" aria-label="施工事例の一覧">
+    <div class="wrap">
+      <!-- CLIENT: 施工事例は、お客様の許可を得た実際の現場の写真と内容に差し替える -->
+      <p class="notice">施工事例は準備中です。いまは見本の枠を表示しています。写真はすべてイメージです。</p>
+
+      <div class="filter" role="group" aria-label="分類で絞り込む">
+        <button type="button" data-filter="all" aria-pressed="true">すべて</button>
+        <button type="button" data-filter="interior" aria-pressed="false">内装</button>
+        <button type="button" data-filter="water" aria-pressed="false">水まわり</button>
+        <button type="button" data-filter="window" aria-pressed="false">窓・玄関</button>
+      </div>
+      <p class="filter-status" aria-live="polite">すべての分類の施工事例を6件表示しています。</p>
+
+      <div class="case-grid">
+        <!-- CLIENT: 施工事例（写真はお客様の許可を得た実際の現場のもの） -->
+        <article class="case" data-cat="interior">
+          <figure class="photo case__photo">
+            <img src="images/08_finish_hallway.jpg" alt="室内ドアが並ぶ廊下のイメージ" width="1920" height="1280">
+            <figcaption class="photo-cap">イメージ</figcaption>
+          </figure>
+          <p class="case__cat">内装</p>
+          <h3><span class="ph">（ここに実際の施工事例が入ります）</span></h3>
+          <dl class="case__data">
+            <dt>場所</dt><dd><span class="ph">（市区町村）</span></dd>
+            <dt>工期</dt><dd><span class="ph">（工期）</span></dd>
+            <dt>費用</dt><dd><span class="ph">（税込の費用）</span></dd>
+            <dt>ご要望</dt><dd><span class="ph">（お客様のご要望）</span></dd>
+          </dl>
+        </article>
+        <!-- CLIENT: 施工事例（写真はお客様の許可を得た実際の現場のもの） -->
+        <article class="case" data-cat="water">
+          <figure class="photo case__photo">
+            <img src="images/07_finish_kitchen.jpg" alt="木の床と濃い茶色の戸棚があるキッチンのイメージ" width="1920" height="1280">
+            <figcaption class="photo-cap">イメージ</figcaption>
+          </figure>
+          <p class="case__cat">水まわり</p>
+          <h3><span class="ph">（ここに実際の施工事例が入ります）</span></h3>
+          <dl class="case__data">
+            <dt>場所</dt><dd><span class="ph">（市区町村）</span></dd>
+            <dt>工期</dt><dd><span class="ph">（工期）</span></dd>
+            <dt>費用</dt><dd><span class="ph">（税込の費用）</span></dd>
+            <dt>ご要望</dt><dd><span class="ph">（お客様のご要望）</span></dd>
+          </dl>
+        </article>
+        <!-- CLIENT: 施工事例（写真はお客様の許可を得た実際の現場のもの） -->
+        <article class="case" data-cat="window">
+          <figure class="photo case__photo">
+            <img src="images/01_hero_window-install.jpg" alt="窓を取り付ける作業のイメージ" width="1920" height="1282" loading="lazy">
+            <figcaption class="photo-cap">イメージ</figcaption>
+          </figure>
+          <p class="case__cat">窓・玄関</p>
+          <h3><span class="ph">（ここに実際の施工事例が入ります）</span></h3>
+          <dl class="case__data">
+            <dt>場所</dt><dd><span class="ph">（市区町村）</span></dd>
+            <dt>工期</dt><dd><span class="ph">（工期）</span></dd>
+            <dt>費用</dt><dd><span class="ph">（税込の費用）</span></dd>
+            <dt>ご要望</dt><dd><span class="ph">（お客様のご要望）</span></dd>
+          </dl>
+        </article>
+        <!-- CLIENT: 施工事例（写真はお客様の許可を得た実際の現場のもの） -->
+        <article class="case" data-cat="water">
+          <figure class="photo case__photo">
+            <img src="images/12_water_powder-room.jpg" alt="洗面台とトイレのイメージ" width="1920" height="1280" loading="lazy">
+            <figcaption class="photo-cap">イメージ</figcaption>
+          </figure>
+          <p class="case__cat">水まわり</p>
+          <h3><span class="ph">（ここに実際の施工事例が入ります）</span></h3>
+          <dl class="case__data">
+            <dt>場所</dt><dd><span class="ph">（市区町村）</span></dd>
+            <dt>工期</dt><dd><span class="ph">（工期）</span></dd>
+            <dt>費用</dt><dd><span class="ph">（税込の費用）</span></dd>
+            <dt>ご要望</dt><dd><span class="ph">（お客様のご要望）</span></dd>
+          </dl>
+        </article>
+        <!-- CLIENT: 施工事例（写真はお客様の許可を得た実際の現場のもの） -->
+        <article class="case" data-cat="interior">
+          <figure class="photo case__photo">
+            <img src="images/11_bg_wood-floor.jpg" alt="木の床のイメージ" width="1920" height="1280" loading="lazy">
+            <figcaption class="photo-cap">イメージ</figcaption>
+          </figure>
+          <p class="case__cat">内装</p>
+          <h3><span class="ph">（ここに実際の施工事例が入ります）</span></h3>
+          <dl class="case__data">
+            <dt>場所</dt><dd><span class="ph">（市区町村）</span></dd>
+            <dt>工期</dt><dd><span class="ph">（工期）</span></dd>
+            <dt>費用</dt><dd><span class="ph">（税込の費用）</span></dd>
+            <dt>ご要望</dt><dd><span class="ph">（お客様のご要望）</span></dd>
+          </dl>
+        </article>
+        <!-- CLIENT: 施工事例（写真はお客様の許可を得た実際の現場のもの） -->
+        <article class="case" data-cat="water">
+          <figure class="photo case__photo">
+            <img src="images/13_water_bathroom.jpg" alt="浴槽と洗面台がある浴室のイメージ" width="1920" height="1282" loading="lazy">
+            <figcaption class="photo-cap">イメージ</figcaption>
+          </figure>
+          <p class="case__cat">水まわり</p>
+          <h3><span class="ph">（ここに実際の施工事例が入ります）</span></h3>
+          <dl class="case__data">
+            <dt>場所</dt><dd><span class="ph">（市区町村）</span></dd>
+            <dt>工期</dt><dd><span class="ph">（工期）</span></dd>
+            <dt>費用</dt><dd><span class="ph">（税込の費用）</span></dd>
+            <dt>ご要望</dt><dd><span class="ph">（お客様のご要望）</span></dd>
+          </dl>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== お問い合わせの案内（共通） ===================== -->
+  <section class="sec cta" aria-labelledby="cta-title">
+    <div class="wrap cta__inner">
+      <div>
+        <h2 id="cta-title">リフォームのご相談・<br>お見積もりのご依頼</h2>
+        <p class="cta__lead">工事したい場所と、気になっていることをお知らせください。ご希望の方法（電話またはメール）でご連絡します。</p>
+      </div>
+      <div class="cta__actions">
+        <a class="btn btn--navy" href="contact.html">お問い合わせフォームへ</a>
+        <div class="tel">
+          <p class="tel__label">お電話でのご相談</p>
+          <p class="tel__num"><!-- CLIENT: 電話番号 --><span class="ph">電話番号</span></p>
+          <p class="tel__hours">受付 8:00〜17:00（日曜日・GW・夏季休暇・年末年始は休み）</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== フッター（全ページ共通） ===================== -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div>
+      <a class="logo" href="index.html" aria-label="株式会社あさつゆ住建 トップページへ"><span class="logo__ja">あさつゆ住建</span><span class="logo__en">ASATSUYU JUKEN</span></a>
+      <p class="footer__name">株式会社あさつゆ住建</p>
+      <dl class="footer__info">
+        <dt>電話</dt><dd><!-- CLIENT: 電話番号 --><span class="ph">電話番号</span></dd>
+        <dt>営業時間</dt><dd>8:00〜17:00</dd>
+        <dt>定休日</dt><dd>日曜日、GW・夏季休暇・年末年始（祝日は営業）</dd>
+        <dt>所在地</dt><dd><!-- CLIENT: 所在地 --><span class="ph">所在地</span></dd>
+      </dl>
+    </div>
+    <nav class="footer__nav" aria-label="サイト内のページ">
+      <ul>
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="service.html">リフォームメニュー</a></li>
+        <li><a href="works.html" aria-current="page">施工事例</a></li>
+        <li><a href="flow.html">流れ・よくある質問</a></li>
+        <li><a href="company.html">会社概要</a></li>
+        <li><a href="https://tmy-adc329.github.io/asatsuyu-lp/">採用情報<span class="sr-only">（採用ページへ移動します）</span><svg class="gnav__ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2L7.5 8.5M12 10v4H2V4h4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="privacy.html">プライバシーポリシー</a></li>
+      </ul>
+    </nav>
+    <div class="footer__bottom">
+      <p class="footer__disclaimer">※このサイトは制作実績（ポートフォリオ）用に作成した架空の会社のWebサイトです。実在の会社ではなく、お問い合わせ・お見積もりはできません。</p>
+      <small>&copy; 株式会社あさつゆ住建</small>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
