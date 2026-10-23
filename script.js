@@ -42,13 +42,15 @@ document.addEventListener('DOMContentLoaded', function () {
   var filter = document.querySelector('.filter');
   if (filter) {
     var buttons = filter.querySelectorAll('button[data-filter]');
-    var cases = document.querySelectorAll('.case-grid .case');
+    var grid = document.querySelector('.case-grid');
+    var cases = grid.querySelectorAll('.case');
     var status = document.querySelector('.filter-status');
     buttons.forEach(function (btn) {
       btn.addEventListener('click', function () {
         var cat = btn.dataset.filter;
         var shown = 0;
         buttons.forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
+        grid.dataset.filter = cat;
         cases.forEach(function (c) {
           var match = cat === 'all' || c.dataset.cat === cat;
           c.hidden = !match;
@@ -83,7 +85,10 @@ document.addEventListener('DOMContentLoaded', function () {
         return /^[0-9０-９]{10,11}$/.test(v) ? '' : '電話番号は10〜11桁の数字で入力してください。';
       },
       'メールアドレス': function (f) {
-        var v = f.querySelector('input').value.trim();
+        // 全角の英数字・記号で入力されても受け付ける（半角に直してから確かめる）
+        var v = f.querySelector('input').value.trim().replace(/[！-～]/g, function (c) {
+          return String.fromCharCode(c.charCodeAt(0) - 0xFEE0);
+        });
         if (!v) return contactMethod() === 'メール' ? 'メールアドレスを入力してください。' : '';
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) ? '' : 'メールアドレスの形式を確かめてください。';
       },
@@ -103,8 +108,13 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     var fields = form.querySelectorAll('.field[data-field]');
-    // 一度エラーが出た項目は、直したらすぐにエラーを消す
     fields.forEach(function (field) {
+      // 入力欄（選択肢のまとまり）を離れたときに確かめる
+      field.addEventListener('focusout', function (e) {
+        if (e.relatedTarget && field.contains(e.relatedTarget)) return; // 同じ項目の中を移動しているあいだは確かめない
+        check(field);
+      });
+      // 一度エラーが出た項目は、直したらすぐにエラーを消す
       field.addEventListener('change', function () { if (field.classList.contains('is-error')) check(field); });
       field.addEventListener('input', function () { if (field.classList.contains('is-error')) check(field); });
     });

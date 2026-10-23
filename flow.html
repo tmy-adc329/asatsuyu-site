@@ -8,7 +8,7 @@
 <meta name="description" content="お問い合わせから現地調査、お見積もり、工事、工事のあとまでの流れと、よくある質問をまとめています。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Noto+Sans+JP:wght@400;700&family=Zen+Kaku+Gothic+New:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script src="script.js" defer></script>
 </head>
@@ -39,13 +39,13 @@
 <main id="main">
 
   <!-- ===================== ページの見出し ===================== -->
-  <div class="page-head">
+  <div class="page-head page-head--soft">
     <div class="wrap">
-      <h1>リフォームの流れ・<br>よくある質問</h1>
+      <h1>リフォームの流れ・<wbr>よくある質問</h1>
       <p class="page-head__lead">お問い合わせから工事のあとまでの流れと、よくある質問です。</p>
       <nav class="jump" aria-label="このページの内容">
-        <a href="#flow">リフォームの流れ</a>
-        <a href="#faq">よくある質問</a>
+        <a class="btn btn--outline" href="#flow">リフォームの流れ</a>
+        <a class="btn btn--outline" href="#faq">よくある質問</a>
       </nav>
     </div>
   </div>
@@ -85,12 +85,12 @@
             <p>自社の施工スタッフが、2人1組で伺います。工事の前に、ご近所へのあいさつをします。</p>
           </li>
           <li class="step">
-            <h3>完了の確認・お引き渡し</h3>
+            <h3>完了の確認・<wbr>お引き渡し</h3>
             <p>仕上がりを一緒に確かめていただいてから、お引き渡しします。</p>
           </li>
           <li class="step">
             <h3>工事のあと</h3>
-            <p>保証・点検の内容：<!-- CLIENT: 保証・アフター点検 --><span class="ph">工事の保証の内容・期間、アフター点検の有無</span></p>
+            <p>保証・点検の内容：<!-- CLIENT: 保証・アフター点検 --><span class="ph">保証の内容・期間と、アフター点検の有無が入ります</span></p>
           </li>
         </ol>
         <figure class="photo steps-wrap__photo">
@@ -131,7 +131,7 @@
           <summary>対応エリアはどこまでですか？</summary>
           <div class="faq__a">
             <p>本社から車で30分圏内です。エリアの外の地域は、お受けできない場合があります。</p>
-            <p>対応エリアの市区町村：<!-- CLIENT: 対応エリアの市区町村 --><span class="ph">対応エリアの市区町村</span></p>
+            <p>対応エリアの市区町村：<!-- CLIENT: 対応エリアの市区町村 --><span class="ph">市区町村名が入ります</span></p>
           </div>
         </details>
         <details>
@@ -154,14 +154,14 @@
   <section class="sec cta" aria-labelledby="cta-title">
     <div class="wrap cta__inner">
       <div>
-        <h2 id="cta-title">リフォームのご相談・<br>お見積もりのご依頼</h2>
+        <h2 id="cta-title">リフォームのご相談・<wbr>お見積もりのご依頼</h2>
         <p class="cta__lead">工事したい場所と、気になっていることをお知らせください。ご希望の方法（電話またはメール）でご連絡します。</p>
       </div>
       <div class="cta__actions">
         <a class="btn btn--navy" href="contact.html">お問い合わせフォームへ</a>
         <div class="tel">
           <p class="tel__label">お電話でのご相談</p>
-          <p class="tel__num"><!-- CLIENT: 電話番号 --><span class="ph">電話番号</span></p>
+          <p class="tel__num"><!-- CLIENT: 電話番号 --><span class="ph">電話番号が入ります</span></p>
           <p class="tel__hours">受付 8:00〜17:00（日曜日・GW・夏季休暇・年末年始は休み）</p>
         </div>
       </div>
@@ -177,10 +177,9 @@
       <a class="logo" href="index.html" aria-label="株式会社あさつゆ住建 トップページへ"><span class="logo__ja">あさつゆ住建</span><span class="logo__en">ASATSUYU JUKEN</span></a>
       <p class="footer__name">株式会社あさつゆ住建</p>
       <dl class="footer__info">
-        <dt>電話</dt><dd><!-- CLIENT: 電話番号 --><span class="ph">電話番号</span></dd>
         <dt>営業時間</dt><dd>8:00〜17:00</dd>
         <dt>定休日</dt><dd>日曜日、GW・夏季休暇・年末年始（祝日は営業）</dd>
-        <dt>所在地</dt><dd><!-- CLIENT: 所在地 --><span class="ph">所在地</span></dd>
+        <dt>電話・所在地</dt><dd><!-- CLIENT: 電話番号 --><!-- CLIENT: 所在地 --><span class="ph">電話番号と所在地が入ります</span></dd>
       </dl>
     </div>
     <nav class="footer__nav" aria-label="サイト内のページ">

@@ -8,7 +8,7 @@
 <meta name="description" content="株式会社あさつゆ住建は、内装・水まわり・窓と玄関のリフォームを行う会社です。本社から車で30分圏内の戸建て・マンションで、自社の施工スタッフが工事をします。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Noto+Sans+JP:wght@400;700&family=Zen+Kaku+Gothic+New:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script src="script.js" defer></script>
 </head>
@@ -38,28 +38,54 @@
 
 <main id="main">
 
-  <!-- ===================== ヒーロー ===================== -->
+  <!-- ===================== ヒーロー（主役：窓を取り付ける写真） ===================== -->
   <section class="hero" aria-labelledby="hero-title">
-    <div class="wrap">
-      <div class="hero__top">
-        <h1 id="hero-title">住まいの気になる<br>一か所から、<br>リフォームをお受けします。</h1>
-        <div>
-          <p class="hero__lead">株式会社あさつゆ住建は、内装・水まわり・窓と玄関のリフォームを行う会社です。本社から車で30分圏内の戸建て・マンションで、内窓1か所の取り付け<span class="nowrap">（約1時間）</span>やトイレの交換<span class="nowrap">（半日）</span>のような短い工事からお受けしています。</p>
-          <div class="hero__cta">
-            <a class="btn btn--navy" href="contact.html">お問い合わせ・お見積もり依頼</a>
-            <a class="btn btn--outline" href="service.html">リフォームメニューと費用</a>
-          </div>
+    <figure class="photo hero__photo">
+      <img src="images/01_hero_window-install.jpg" alt="窓を取り付ける作業のイメージ" width="1920" height="1282" fetchpriority="high">
+      <figcaption class="photo-cap">作業のイメージ</figcaption>
+    </figure>
+    <div class="wrap hero__wrap">
+      <div class="hero__card">
+        <h1 id="hero-title">住まいの気になる<wbr>一か所から、<wbr>リフォームを<wbr>お受けします。</h1>
+        <p class="hero__lead">株式会社あさつゆ住建は、内装・水まわり・窓と玄関のリフォームを行う会社です。本社から車で30分圏内の戸建て・マンションで、内窓1か所の取り付け<span class="nowrap">（約1時間）</span>やトイレの交換<span class="nowrap">（半日）</span>のような短い工事からお受けしています。</p>
+        <div class="hero__cta">
+          <a class="btn btn--navy" href="contact.html">お問い合わせフォームへ</a>
+          <a class="more" href="service.html">リフォームメニューを見る</a>
         </div>
       </div>
     </div>
-    <figure class="photo hero__photo">
-      <img src="images/07_finish_kitchen.jpg" alt="木の床と濃い茶色の戸棚があるキッチンのイメージ" width="1920" height="1280">
-      <figcaption class="photo-cap">仕上がりのイメージ</figcaption>
-    </figure>
+  </section>
+
+  <!-- ===================== 工期と費用の目安（早い位置に置く情報。数字は brief.md のメニュー表と同じ） ===================== -->
+  <section class="sec quick" aria-labelledby="quick-title">
+    <div class="wrap quick__inner">
+      <div>
+        <h2 id="quick-title">工事の工期と<wbr>費用の目安</h2>
+        <table class="price">
+          <caption class="sr-only">おもな工事の工期と費用の目安（税込）</caption>
+          <thead>
+            <tr><th scope="col">工事</th><th scope="col">工期の目安</th><th scope="col">費用の目安（税込）</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">内窓の取り付け（1か所）</th><td data-label="工期の目安">約<span class="num">1</span>時間</td><td data-label="費用の目安（税込）"><span class="num">8</span><span class="yen">万円〜</span></td></tr>
+            <tr><th scope="row">トイレの交換</th><td data-label="工期の目安">半日</td><td data-label="費用の目安（税込）"><span class="num">20</span><span class="yen">万円〜</span></td></tr>
+            <tr><th scope="row">床の張り替え（6畳・フローリング）</th><td data-label="工期の目安"><span class="num">1〜2</span>日</td><td data-label="費用の目安（税込）"><span class="num">12</span><span class="yen">万円〜</span></td></tr>
+            <tr><th scope="row">浴室（ユニットバス）の交換</th><td data-label="工期の目安"><span class="num">3〜4</span>日</td><td data-label="費用の目安（税込）"><span class="num">90</span><span class="yen">万円〜</span></td></tr>
+          </tbody>
+        </table>
+        <p class="quick__note">費用は目安です。住まいの状態や選ぶ商品によって変わります。現地調査のあと、書面でお見積もりをお出しします。</p>
+        <a class="more" href="service.html">ほかの工事の工期と費用を見る</a>
+      </div>
+      <dl class="quick__info">
+        <div><dt>現地調査・お見積もり</dt><dd>無料</dd></div>
+        <div><dt>対応エリア</dt><dd>本社から車で30分圏内</dd></div>
+        <div><dt>営業時間</dt><dd><span class="num">8:00〜17:00</span><small>定休日：日曜日、GW・夏季休暇・年末年始（祝日は営業）</small></dd></div>
+      </dl>
+    </div>
   </section>
 
   <!-- ===================== できる工事 ===================== -->
-  <section class="sec sec--soft" aria-labelledby="cats-title">
+  <section class="sec" aria-labelledby="cats-title">
     <div class="wrap">
       <div class="sec-head">
         <h2 id="cats-title">できる工事</h2>
@@ -73,10 +99,6 @@
           </figure>
           <h3>内装</h3>
           <p class="cat__items">床の張り替え、壁紙の貼り替え、室内ドアの交換</p>
-          <dl class="cat__facts">
-            <dt>工期の目安</dt><dd><span class="num">1〜2</span>日</dd>
-            <dt>費用の目安</dt><dd><span class="num">5</span>万円〜</dd>
-          </dl>
           <a class="more" href="service.html#interior">内装の工事と費用</a>
         </li>
         <li class="cat">
@@ -86,10 +108,6 @@
           </figure>
           <h3>水まわり</h3>
           <p class="cat__items">キッチン・浴室・トイレ・洗面台の交換</p>
-          <dl class="cat__facts">
-            <dt>工期の目安</dt><dd>半日〜<span class="num">4</span>日</dd>
-            <dt>費用の目安</dt><dd><span class="num">20</span>万円〜</dd>
-          </dl>
           <a class="more" href="service.html#water">水まわりの工事と費用</a>
         </li>
         <li class="cat">
@@ -99,69 +117,57 @@
           </figure>
           <h3>窓・玄関</h3>
           <p class="cat__items">内窓の取り付け、玄関ドアの交換</p>
-          <dl class="cat__facts">
-            <dt>工期の目安</dt><dd>約<span class="num">1</span>時間〜<span class="num">1</span>日</dd>
-            <dt>費用の目安</dt><dd><span class="num">8</span>万円〜</dd>
-          </dl>
           <a class="more" href="service.html#window">窓・玄関の工事と費用</a>
         </li>
       </ul>
-      <p class="cats-note">費用は税込の目安です。住まいの状態や選ぶ商品によって変わります。外壁・屋根・増改築・新築の工事は扱っていません。</p>
+      <p class="cats-note">外壁・屋根・増改築・新築の工事は扱っていません。</p>
     </div>
   </section>
 
-  <!-- ===================== 特徴 ===================== -->
-  <section class="sec" aria-labelledby="feats-title">
+  <!-- ===================== 特徴（大きな見出しと一言） ===================== -->
+  <section class="sec sec--soft" aria-labelledby="feats-title">
     <div class="wrap">
       <div class="sec-head">
-        <h2 id="feats-title">あさつゆ住建のリフォームの特徴</h2>
+        <h2 id="feats-title">あさつゆ住建の<wbr>リフォームの特徴</h2>
       </div>
       <div class="feats">
         <article class="feat">
-          <figure class="feat__media photo feat__photo">
-            <img src="images/06_work_marking.jpg" alt="木材に鉛筆で印を付ける作業のイメージ" width="1920" height="1280" loading="lazy">
-            <figcaption class="photo-cap">作業のイメージ</figcaption>
-          </figure>
+          <h3>自社の施工スタッフが<wbr>工事をします</h3>
           <div class="feat__body">
-            <h3>自社の施工スタッフが工事をします</h3>
             <p>あさつゆ住建の従業員は12名で、そのうち8名が施工スタッフです。工事の日は、この8名のうち2人1組でお住まいに伺います。</p>
           </div>
         </article>
         <article class="feat">
-          <div class="feat__media area-map">
-            <svg viewBox="0 0 380 280" role="img" aria-label="本社を中心に、車で30分圏内を対応エリアにしていることを示す図">
-              <defs>
-                <path id="house" d="M0 9 9 0l9 9v11H0z"/>
-              </defs>
-              <circle cx="190" cy="146" r="118" style="fill:#fff;stroke:var(--wood-deep);stroke-width:2;stroke-dasharray:6 7"/>
-              <path d="M40 146h300M190 18v256M92 60l196 172M288 60 92 232" style="fill:none;stroke:var(--brand-line);stroke-width:6;stroke-linecap:round"/>
-              <g style="fill:var(--brand-line)">
-                <use href="#house" x="120" y="92"/>
-                <use href="#house" x="238" y="104"/>
-                <use href="#house" x="104" y="176"/>
-                <use href="#house" x="226" y="196"/>
-                <use href="#house" x="176" y="226"/>
-                <use href="#house" x="150" y="54"/>
-              </g>
-              <circle cx="190" cy="146" r="10" style="fill:var(--brand)"/>
-              <text x="190" y="180" text-anchor="middle" style="font:700 15px var(--font-head);fill:var(--brand)">本社</text>
-              <text x="190" y="20" text-anchor="middle" style="font:700 14px var(--font-head);fill:var(--wood-deep)">車で30分圏内</text>
-            </svg>
-          </div>
+          <h3>本社から車で30分圏内の<wbr>住まいに絞っています</h3>
           <div class="feat__body">
-            <h3>本社から車で30分圏内の住まいに絞っています</h3>
             <p>エリアを絞っているので、工事のあとに気になることが出てきたときも、ご相談に伺いやすい距離です。</p>
-            <p class="feat__area">対応エリアの市区町村：<!-- CLIENT: 対応エリアの市区町村 --><span class="ph">対応エリアの市区町村</span></p>
+            <p class="feat__area">対応エリアの市区町村：<!-- CLIENT: 対応エリアの市区町村 --><span class="ph">市区町村名が入ります</span></p>
+            <div class="area-map">
+              <svg viewBox="0 0 380 280" role="img" aria-label="本社を中心に、車で30分圏内を対応エリアにしていることを示す図">
+                <defs>
+                  <path id="house" d="M0 9 9 0l9 9v11H0z"/>
+                </defs>
+                <circle cx="190" cy="146" r="118" style="fill:var(--wood-bg);stroke:var(--wood-deep);stroke-width:2;stroke-dasharray:6 7"/>
+                <path d="M40 146h300M190 18v256M92 60l196 172M288 60 92 232" style="fill:none;stroke:var(--brand-line);stroke-width:6;stroke-linecap:round"/>
+                <g style="fill:var(--brand-line)">
+                  <use href="#house" x="120" y="92"/>
+                  <use href="#house" x="238" y="104"/>
+                  <use href="#house" x="104" y="176"/>
+                  <use href="#house" x="226" y="196"/>
+                  <use href="#house" x="176" y="226"/>
+                  <use href="#house" x="150" y="54"/>
+                </g>
+                <circle cx="190" cy="146" r="10" style="fill:var(--brand)"/>
+                <text x="190" y="180" text-anchor="middle" style="font:700 15px var(--font-head);fill:var(--brand)">本社</text>
+                <text x="190" y="20" text-anchor="middle" style="font:700 14px var(--font-head);fill:var(--wood-deep)">車で30分圏内</text>
+              </svg>
+            </div>
           </div>
         </article>
         <article class="feat">
-          <figure class="feat__media photo feat__photo feat__photo--wide">
-            <img src="images/16_survey_tape-measure.jpg" alt="メジャーで寸法を測るイメージ" width="1920" height="1002" loading="lazy">
-            <figcaption class="photo-cap">イメージ</figcaption>
-          </figure>
+          <h3>現地で確かめてから、<wbr>書面でお見積もりを<wbr>お出しします</h3>
           <div class="feat__body">
-            <h3>現地で確かめてから、書面でお見積もりをお出しします</h3>
-            <p>現地調査では、寸法と住まいの状態を確かめます。現地調査とお見積もりは無料です。お見積もりのあとにお断りいただいても、費用はかかりません。</p>
+            <p>現地調査では、寸法と住まいの状態を確かめます。お見積もりのあとにお断りいただいても、費用はかかりません。</p>
           </div>
         </article>
       </div>
@@ -169,11 +175,12 @@
   </section>
 
   <!-- ===================== 施工事例（3件） ===================== -->
-  <section class="sec sec--wood" aria-labelledby="pickup-title">
+  <section class="sec" aria-labelledby="pickup-title">
     <div class="wrap">
       <div class="sec-head">
         <h2 id="pickup-title">施工事例</h2>
       </div>
+      <p class="sample-note"><span class="sample-note__tag">掲載例</span>写真はイメージです。枠の中に、お客様の許可を得た実際の施工事例（場所・工期・費用・ご要望）が入ります。</p>
       <div class="pickup">
         <!-- CLIENT: 施工事例（写真はお客様の許可を得た実際の現場のもの） -->
         <article class="case" data-cat="interior">
@@ -181,14 +188,33 @@
             <img src="images/08_finish_hallway.jpg" alt="室内ドアが並ぶ廊下のイメージ" width="1920" height="1280" loading="lazy">
             <figcaption class="photo-cap">イメージ</figcaption>
           </figure>
-          <p class="case__cat">内装</p>
-          <h3><span class="ph">（ここに実際の施工事例が入ります）</span></h3>
-          <dl class="case__data">
-            <dt>場所</dt><dd><span class="ph">（市区町村）</span></dd>
-            <dt>工期</dt><dd><span class="ph">（工期）</span></dd>
-            <dt>費用</dt><dd><span class="ph">（税込の費用）</span></dd>
-            <dt>ご要望</dt><dd><span class="ph">（お客様のご要望）</span></dd>
-          </dl>
+          <div class="case__body">
+            <h3 class="case__cat">内装</h3>
+            <dl class="case__data">
+              <div><dt>タイトル</dt><dd class="blank"><span class="sr-only">掲載例</span></dd></div>
+              <div><dt>場所</dt><dd class="blank"><span class="sr-only">掲載例</span></dd></div>
+              <div><dt>工期</dt><dd class="blank"><span class="sr-only">掲載例</span></dd></div>
+              <div><dt>費用</dt><dd class="blank"><span class="sr-only">掲載例</span></dd></div>
+              <div><dt>ご要望</dt><dd class="blank"><span class="sr-only">掲載例</span></dd></div>
+            </dl>
+          </div>
+        </article>
+        <!-- CLIENT: 施工事例（写真はお客様の許可を得た実際の現場のもの） -->
+        <article class="case" data-cat="water">
+          <figure class="photo case__photo">
+            <img src="images/07_finish_kitchen.jpg" alt="木の床と濃い茶色の戸棚があるキッチンのイメージ" width="1920" height="1280" loading="lazy">
+            <figcaption class="photo-cap">イメージ</figcaption>
+          </figure>
+          <div class="case__body">
+            <h3 class="case__cat">水まわり</h3>
+            <dl class="case__data">
+              <div><dt>タイトル</dt><dd class="blank"><span class="sr-only">掲載例</span></dd></div>
+              <div><dt>場所</dt><dd class="blank"><span class="sr-only">掲載例</span></dd></div>
+              <div><dt>工期</dt><dd class="blank"><span class="sr-only">掲載例</span></dd></div>
+              <div><dt>費用</dt><dd class="blank"><span class="sr-only">掲載例</span></dd></div>
+              <div><dt>ご要望</dt><dd class="blank"><span class="sr-only">掲載例</span></dd></div>
+            </dl>
+          </div>
         </article>
         <!-- CLIENT: 施工事例（写真はお客様の許可を得た実際の現場のもの） -->
         <article class="case" data-cat="water">
@@ -196,48 +222,35 @@
             <img src="images/13_water_bathroom.jpg" alt="浴槽と洗面台がある浴室のイメージ" width="1920" height="1282" loading="lazy">
             <figcaption class="photo-cap">イメージ</figcaption>
           </figure>
-          <p class="case__cat">水まわり</p>
-          <h3><span class="ph">（ここに実際の施工事例が入ります）</span></h3>
-          <dl class="case__data">
-            <dt>場所</dt><dd><span class="ph">（市区町村）</span></dd>
-            <dt>工期</dt><dd><span class="ph">（工期）</span></dd>
-            <dt>費用</dt><dd><span class="ph">（税込の費用）</span></dd>
-            <dt>ご要望</dt><dd><span class="ph">（お客様のご要望）</span></dd>
-          </dl>
-        </article>
-        <!-- CLIENT: 施工事例（写真はお客様の許可を得た実際の現場のもの） -->
-        <article class="case" data-cat="window">
-          <figure class="photo case__photo">
-            <img src="images/01_hero_window-install.jpg" alt="窓を取り付ける作業のイメージ" width="1920" height="1282" loading="lazy">
-            <figcaption class="photo-cap">イメージ</figcaption>
-          </figure>
-          <p class="case__cat">窓・玄関</p>
-          <h3><span class="ph">（ここに実際の施工事例が入ります）</span></h3>
-          <dl class="case__data">
-            <dt>場所</dt><dd><span class="ph">（市区町村）</span></dd>
-            <dt>工期</dt><dd><span class="ph">（工期）</span></dd>
-            <dt>費用</dt><dd><span class="ph">（税込の費用）</span></dd>
-            <dt>ご要望</dt><dd><span class="ph">（お客様のご要望）</span></dd>
-          </dl>
+          <div class="case__body">
+            <h3 class="case__cat">水まわり</h3>
+            <dl class="case__data">
+              <div><dt>タイトル</dt><dd class="blank"><span class="sr-only">掲載例</span></dd></div>
+              <div><dt>場所</dt><dd class="blank"><span class="sr-only">掲載例</span></dd></div>
+              <div><dt>工期</dt><dd class="blank"><span class="sr-only">掲載例</span></dd></div>
+              <div><dt>費用</dt><dd class="blank"><span class="sr-only">掲載例</span></dd></div>
+              <div><dt>ご要望</dt><dd class="blank"><span class="sr-only">掲載例</span></dd></div>
+            </dl>
+          </div>
         </article>
       </div>
       <p class="sec-foot"><a class="more" href="works.html">施工事例の一覧へ</a></p>
     </div>
   </section>
 
-  <!-- ===================== 流れ（短く） ===================== -->
+  <!-- ===================== 流れ（番号つきの順路） ===================== -->
   <section class="sec sec--navy" aria-labelledby="flow-title">
     <div class="wrap">
       <div class="sec-head">
-        <h2 id="flow-title">ご相談から工事までの流れ</h2>
+        <h2 id="flow-title">ご相談から<wbr>工事までの流れ</h2>
       </div>
-      <ol class="flow-line">
+      <ol class="route">
         <li><b>お問い合わせ</b><span>フォームまたは電話で</span></li>
         <li><b>現地調査</b><span>30分〜1時間ほど</span></li>
         <li><b>お見積もり</b><span>現地調査から1週間以内に書面で</span></li>
         <li><b>ご契約</b></li>
         <li><b>工事</b><span>工事の前にご近所へあいさつ</span></li>
-        <li><b>完了の確認・お引き渡し</b></li>
+        <li><b>完了の確認・<wbr>お引き渡し</b></li>
         <li><b>工事のあと</b></li>
       </ol>
       <p class="sec-foot"><a class="more" href="flow.html">流れとよくある質問を詳しく見る</a></p>
@@ -249,7 +262,7 @@
     <div class="wrap">
       <div class="recruit">
         <div class="recruit__text">
-          <h2 id="recruit-title">施工スタッフを募集しています</h2>
+          <h2 id="recruit-title">施工スタッフを<wbr>募集しています</h2>
           <p>仕事の内容、給与などの募集要項、応募の方法は、採用ページにまとめています。</p>
         </div>
         <a class="btn btn--outline" href="https://tmy-adc329.github.io/asatsuyu-lp/">採用ページを見る<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2L7.5 8.5M12 10v4H2V4h4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
@@ -261,20 +274,19 @@
   <section class="sec cta" aria-labelledby="cta-title">
     <div class="wrap cta__inner">
       <div>
-        <h2 id="cta-title">リフォームのご相談・<br>お見積もりのご依頼</h2>
+        <h2 id="cta-title">リフォームのご相談・<wbr>お見積もりのご依頼</h2>
         <p class="cta__lead">工事したい場所と、気になっていることをお知らせください。ご希望の方法（電話またはメール）でご連絡します。</p>
       </div>
       <div class="cta__actions">
         <a class="btn btn--navy" href="contact.html">お問い合わせフォームへ</a>
         <div class="tel">
           <p class="tel__label">お電話でのご相談</p>
-          <p class="tel__num"><!-- CLIENT: 電話番号 --><span class="ph">電話番号</span></p>
+          <p class="tel__num"><!-- CLIENT: 電話番号 --><span class="ph">電話番号が入ります</span></p>
           <p class="tel__hours">受付 8:00〜17:00（日曜日・GW・夏季休暇・年末年始は休み）</p>
         </div>
       </div>
     </div>
   </section>
-
 </main>
 
 <!-- ===================== フッター（全ページ共通） ===================== -->
@@ -284,10 +296,9 @@
       <a class="logo" href="index.html" aria-label="株式会社あさつゆ住建 トップページへ"><span class="logo__ja">あさつゆ住建</span><span class="logo__en">ASATSUYU JUKEN</span></a>
       <p class="footer__name">株式会社あさつゆ住建</p>
       <dl class="footer__info">
-        <dt>電話</dt><dd><!-- CLIENT: 電話番号 --><span class="ph">電話番号</span></dd>
         <dt>営業時間</dt><dd>8:00〜17:00</dd>
         <dt>定休日</dt><dd>日曜日、GW・夏季休暇・年末年始（祝日は営業）</dd>
-        <dt>所在地</dt><dd><!-- CLIENT: 所在地 --><span class="ph">所在地</span></dd>
+        <dt>電話・所在地</dt><dd><!-- CLIENT: 電話番号 --><!-- CLIENT: 所在地 --><span class="ph">電話番号と所在地が入ります</span></dd>
       </dl>
     </div>
     <nav class="footer__nav" aria-label="サイト内のページ">

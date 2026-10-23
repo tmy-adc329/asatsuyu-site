@@ -8,7 +8,7 @@
 <meta name="description" content="株式会社あさつゆ住建の会社情報、代表あいさつ、アクセスです。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Noto+Sans+JP:wght@400;700&family=Zen+Kaku+Gothic+New:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script src="script.js" defer></script>
 </head>
@@ -45,56 +45,60 @@
       <p class="page-head__lead">株式会社あさつゆ住建は、2009年に設立した住宅リフォームの会社です。</p>
     </div>
     <figure class="photo page-head__photo">
-      <img src="images/10_tools_rack.jpg" alt="壁の棚に並んだ大工道具のイメージ" width="1920" height="1280">
+      <img src="images/10_tools_rack.jpg" alt="壁の棚に並んだ大工道具のイメージ" width="1920" height="1280" fetchpriority="high">
       <figcaption class="photo-cap">道具のイメージ</figcaption>
     </figure>
   </div>
 
   <!-- ===================== 会社情報 ===================== -->
   <section class="sec" aria-labelledby="info-title">
-    <div class="wrap">
+    <div class="wrap info-wrap">
       <div class="sec-head">
         <h2 id="info-title">会社情報</h2>
       </div>
-      <table class="info">
-        <tbody>
-          <tr><th scope="row">会社名</th><td>株式会社あさつゆ住建</td></tr>
-          <tr><th scope="row">設立</th><td>2009年</td></tr>
-          <tr><th scope="row">代表者</th><td><!-- CLIENT: 代表者名 --><span class="ph">代表者名</span></td></tr>
-          <tr><th scope="row">所在地</th><td><!-- CLIENT: 所在地 --><span class="ph">所在地</span></td></tr>
-          <tr><th scope="row">電話番号</th><td><!-- CLIENT: 電話番号 --><span class="ph">電話番号</span></td></tr>
-          <tr><th scope="row">メールアドレス</th><td><!-- CLIENT: メールアドレス --><span class="ph">メールアドレス</span></td></tr>
-          <tr><th scope="row">事業内容</th><td>住宅リフォーム（戸建て・マンション）<small>内装（床・壁紙・室内ドア）、水まわり（キッチン・浴室・トイレ・洗面台）、窓・玄関（内窓・玄関ドア）。外壁・屋根・増改築・新築の工事は扱っていません。</small></td></tr>
-          <tr><th scope="row">従業員</th><td>12名（施工スタッフ8名、営業・事務4名）</td></tr>
-          <tr><th scope="row">対応エリア</th><td>本社から車で30分圏内<small><!-- CLIENT: 対応エリアの市区町村 --><span class="ph">対応エリアの市区町村</span></small></td></tr>
-          <tr><th scope="row">営業時間</th><td>8:00〜17:00</td></tr>
-          <tr><th scope="row">定休日</th><td>日曜日、GW・夏季休暇・年末年始（祝日は営業）</td></tr>
-          <tr><th scope="row">建設業許可</th><td><!-- CLIENT: 建設業許可の有無・許可番号 --><span class="ph">建設業許可の有無・許可番号</span></td></tr>
-          <tr><th scope="row">加入している保険</th><td><!-- CLIENT: 加入している保険（リフォーム瑕疵保険など） --><span class="ph">加入している保険</span></td></tr>
-          <tr><th scope="row">登録している団体</th><td><!-- CLIENT: 登録している団体 --><span class="ph">登録している団体</span></td></tr>
-        </tbody>
-      </table>
+      <div>
+        <table class="info">
+          <tbody>
+            <tr><th scope="row">会社名</th><td>株式会社あさつゆ住建</td></tr>
+            <tr><th scope="row">設立</th><td>2009年</td></tr>
+            <!-- CLIENT: 代表者名 -->
+            <!-- CLIENT: 所在地 -->
+            <!-- CLIENT: 電話番号 -->
+            <!-- CLIENT: メールアドレス -->
+            <tr><th scope="row">事業内容</th><td>住宅リフォーム（戸建て・マンション）<small>内装（床・壁紙・室内ドア）、水まわり（キッチン・浴室・トイレ・洗面台）、窓・玄関（内窓・玄関ドア）。外壁・屋根・増改築・新築の工事は扱っていません。</small></td></tr>
+            <tr><th scope="row">従業員</th><td>12名（施工スタッフ8名、営業・事務4名）</td></tr>
+            <!-- CLIENT: 対応エリアの市区町村 -->
+            <tr><th scope="row">対応エリア</th><td>本社から車で30分圏内</td></tr>
+            <tr><th scope="row">営業時間</th><td>8:00〜17:00</td></tr>
+            <tr><th scope="row">定休日</th><td>日曜日、GW・夏季休暇・年末年始（祝日は営業）</td></tr>
+            <!-- CLIENT: 建設業許可の有無・許可番号 -->
+            <!-- CLIENT: 加入している保険（リフォーム瑕疵保険など） -->
+            <!-- CLIENT: 登録している団体 -->
+          </tbody>
+        </table>
+        <p class="sample-note"><span class="sample-note__tag">掲載例</span>代表者名・所在地・電話番号・メールアドレス・対応エリアの市区町村・建設業許可の有無と許可番号・加入している保険・登録している団体は、確認したうえで表に加えます。</p>
+      </div>
     </div>
   </section>
 
   <!-- ===================== 代表あいさつ（レイアウトのみ） ===================== -->
-  <section class="sec sec--soft" aria-labelledby="greet-title">
+  <section class="sec sec--wood" aria-labelledby="greet-title">
     <div class="wrap">
       <div class="sec-head">
         <h2 id="greet-title">代表あいさつ</h2>
       </div>
       <!-- CLIENT: 代表あいさつ（本人が書いた文章と、本人の許可を得た写真） -->
-      <div class="greet">
-        <div class="ph-block greet__photo">代表者の写真</div>
+      <p class="sample-note"><span class="sample-note__tag">掲載例</span>代表者の写真と、あいさつの文章、名前が入ります。</p>
+      <div class="greet" aria-hidden="true">
+        <div class="ph-block greet__photo"></div>
         <div>
-          <p class="ph">（ここに代表あいさつの文章が入ります）</p>
-          <div class="greet__text" aria-hidden="true">
-            <div class="greet__line"></div>
-            <div class="greet__line"></div>
-            <div class="greet__line"></div>
-            <div class="greet__line greet__line--short"></div>
+          <div class="greet__text">
+            <span class="blank"></span>
+            <span class="blank"></span>
+            <span class="blank"></span>
+            <span class="blank"></span>
           </div>
-          <p class="greet__name">株式会社あさつゆ住建 代表 <span class="ph">代表者名</span></p>
+          <p class="greet__name">株式会社あさつゆ住建 代表<span class="blank"></span></p>
         </div>
       </div>
     </div>
@@ -106,13 +110,9 @@
       <div class="sec-head">
         <h2 id="access-title">アクセス</h2>
       </div>
-      <div class="access">
-        <!-- CLIENT: 地図（Googleマップの埋め込み） -->
-        <div class="ph-block access__map">地図（所在地が決まったら入ります）</div>
-        <dl>
-          <dt>所在地</dt><dd><!-- CLIENT: 所在地 --><span class="ph">所在地</span></dd>
-        </dl>
-      </div>
+      <!-- CLIENT: 地図（Googleマップの埋め込み） -->
+      <!-- CLIENT: 所在地 -->
+      <div class="ph-block access__map"><p><span class="sample-note__tag">掲載例</span>所在地と地図が入ります</p></div>
     </div>
   </section>
 
@@ -120,20 +120,19 @@
   <section class="sec cta" aria-labelledby="cta-title">
     <div class="wrap cta__inner">
       <div>
-        <h2 id="cta-title">リフォームのご相談・<br>お見積もりのご依頼</h2>
+        <h2 id="cta-title">リフォームのご相談・<wbr>お見積もりのご依頼</h2>
         <p class="cta__lead">工事したい場所と、気になっていることをお知らせください。ご希望の方法（電話またはメール）でご連絡します。</p>
       </div>
       <div class="cta__actions">
         <a class="btn btn--navy" href="contact.html">お問い合わせフォームへ</a>
         <div class="tel">
           <p class="tel__label">お電話でのご相談</p>
-          <p class="tel__num"><!-- CLIENT: 電話番号 --><span class="ph">電話番号</span></p>
+          <p class="tel__num"><!-- CLIENT: 電話番号 --><span class="ph">電話番号が入ります</span></p>
           <p class="tel__hours">受付 8:00〜17:00（日曜日・GW・夏季休暇・年末年始は休み）</p>
         </div>
       </div>
     </div>
   </section>
-
 </main>
 
 <!-- ===================== フッター（全ページ共通） ===================== -->
@@ -143,10 +142,9 @@
       <a class="logo" href="index.html" aria-label="株式会社あさつゆ住建 トップページへ"><span class="logo__ja">あさつゆ住建</span><span class="logo__en">ASATSUYU JUKEN</span></a>
       <p class="footer__name">株式会社あさつゆ住建</p>
       <dl class="footer__info">
-        <dt>電話</dt><dd><!-- CLIENT: 電話番号 --><span class="ph">電話番号</span></dd>
         <dt>営業時間</dt><dd>8:00〜17:00</dd>
         <dt>定休日</dt><dd>日曜日、GW・夏季休暇・年末年始（祝日は営業）</dd>
-        <dt>所在地</dt><dd><!-- CLIENT: 所在地 --><span class="ph">所在地</span></dd>
+        <dt>電話・所在地</dt><dd><!-- CLIENT: 電話番号 --><!-- CLIENT: 所在地 --><span class="ph">電話番号と所在地が入ります</span></dd>
       </dl>
     </div>
     <nav class="footer__nav" aria-label="サイト内のページ">
