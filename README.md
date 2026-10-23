@@ -28,11 +28,11 @@
 
 | ファイル | ページ | 主な中身 |
 |---|---|---|
-| `index.html` | トップ | できる工事（3分類）、リフォームの特徴（3点）、施工事例（3件）、ご相談から工事までの流れ、採用情報への案内、お問い合わせの案内 |
+| `index.html` | トップ | 窓を取り付ける写真のヒーロー、工事の工期と費用の目安（対応エリア・営業時間も）、できる工事（3分類）、リフォームの特徴（3点）、施工事例（3件）、ご相談から工事までの流れ、採用情報への案内、お問い合わせの案内 |
 | `service.html` | リフォームメニュー | 内装・水まわり・窓と玄関ごとに、工事の内容・工期の目安・費用の目安（税込）の表 |
 | `works.html` | 施工事例 | カード6枚のレイアウトのみ。内装・水まわり・窓と玄関で絞り込むボタン |
 | `flow.html` | リフォームの流れ・よくある質問 | お問い合わせから工事のあとまでの7段階と、よくある質問6問 |
-| `company.html` | 会社概要 | 会社情報の表、代表あいさつ（レイアウトのみ）、アクセス（地図は仮表示） |
+| `company.html` | 会社概要 | 会社情報の表、代表あいさつ（レイアウトのみ）、アクセス（所在地と地図は仮表示） |
 | `contact.html` | お問い合わせ | フォームと、電話番号・受付時間 |
 | `privacy.html` | プライバシーポリシー | 見本として作成（実際の内容はクライアントが確認して決める前提） |
 
@@ -63,7 +63,7 @@
 - **許可・保険・団体を名乗らない**：建設業許可の有無・許可番号、加入している保険、登録している団体は書かず、未確定の表示にしています
 - **個人情報の利用目的を示す**：フォームで連絡先を集めるため、利用目的を送信ボタンの近くに書いています
 
-代表者名・所在地・電話番号・メールアドレス・地図・工事の保証やアフター点検など、実際の情報が必要な箇所は、仮の文章や数字で埋めていません。`<!-- CLIENT: ... -->` コメントを付けたうえで、画面上でも点線の枠で未確定と分かるようにしています。
+代表者名・所在地・電話番号・メールアドレス・地図・工事の保証やアフター点検など、実際の情報が必要な箇所は、仮の文章や数字で埋めていません。`<!-- CLIENT: ... -->` コメントを付けたうえで、画面上でも点線の枠で未確定と分かるようにしています。仮の表示は、セクションごとに1つの「掲載例」の注記にまとめています。
 
 ## 写真の出典
 
@@ -74,7 +74,6 @@
 | `images/01_hero_window-install.jpg` | Ksenia Chernaya / Pexels | https://www.pexels.com/photo/faceless-handyman-installing-window-in-new-house-5691550/ |
 | `images/02_work_window-side.jpg` | Ksenia Chernaya / Pexels | https://www.pexels.com/photo/unrecognizable-workman-installing-window-in-new-apartment-5691521/ |
 | `images/03_site_renovation-room.jpg` | Ksenia Chernaya / Pexels | https://www.pexels.com/photo/modern-flat-interior-with-doorway-during-renovation-process-5691533/ |
-| `images/06_work_marking.jpg` | Craft Kitties / Unsplash | https://unsplash.com/photos/person-marking-wooden-board-with-pencil-GfYA6q5ESLI |
 | `images/07_finish_kitchen.jpg` | Francesca Tosolini / Unsplash | https://unsplash.com/photos/brown-and-beige-kitchen-interior-lIVK3z606og |
 | `images/08_finish_hallway.jpg` | Josh Lemmon / Unsplash | https://unsplash.com/photos/hallway-with-grey-walls-and-doors-jHLMUAW-nFc |
 | `images/10_tools_rack.jpg` | Barn Images / Unsplash | https://unsplash.com/photos/assorted-handheld-tools-in-tool-rack-t5YUoHW6zRo |
